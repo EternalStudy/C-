@@ -15,3 +15,4 @@ if (a > b && a > c)
 }
 else if (b > a && b > c) Console.WriteLine($"Максимальное число B={b}");
 else if (c > a && c > b) Console.WriteLine($"Максимальное число C={c}");
+else if (a == b && a == c && b ==c) Console.WriteLine("Введеные числа равны");
