@@ -7,7 +7,5 @@ Console.Clear();
 Console.WriteLine("Введите трехзначное число");
 int x = int.Parse(Console.ReadLine()!);
 int y = x % 10;
-if (x >= 100 && x < 1000)
-    Console.WriteLine($"Третья цифра введенного числа {y}");
-else
-    Console.WriteLine("Третьей цифры нет");
+if (x >= 100 && x < 1000) Console.WriteLine($"Третья цифра введенного числа {y}");
+else if (x < 100 ^ x > 1000) Console.WriteLine("Третьей цифры нет");

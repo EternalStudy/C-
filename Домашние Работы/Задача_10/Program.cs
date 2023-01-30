@@ -6,5 +6,6 @@
 Console.Clear();
 Console.WriteLine("Введите трехзначное число");
 int x = int.Parse(Console.ReadLine()!);
-int y = (x/10)%10;
-Console.WriteLine($"Средняя цифра введенного числа {y}");
+int y = (x / 10) % 10;
+if (x >= 100 && x < 1000) Console.WriteLine($"Средняя цифра введенного числа {y}");
+else if (x < 100 ^ x > 1000) Console.WriteLine($"Число {x} не трехзначное");
