@@ -12,7 +12,7 @@ else
 {
     for (int i = 0; i <= days.Length; i++)
     {
-        if (days[x - 1] == "Суббота" ^ days[x - 1] == "Воскресенье") Console.WriteLine($"День {x} - выходной {days[x - 1]}");
+        if (x - 1 == 5 || x - 1 == 6) Console.WriteLine($"День {x} - выходной {days[x - 1]}");
         else Console.WriteLine($"День {x} - не выходной {days[x - 1]}");
         break;
     }
