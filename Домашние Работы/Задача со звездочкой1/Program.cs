@@ -11,7 +11,7 @@ int[] GetArray(int size, int minValue, int maxValue)
     }
     return result;
 }
-int[] MaxNum(int[] inArray)
+void MaxNum(int[] inArray)
 {
     int max = 0;
     for (int i = 0; i < inArray.Length; i++)
@@ -26,8 +26,6 @@ int[] MaxNum(int[] inArray)
             }
         }
     }
-    return max;
-
     for (int i = 0; i < inArray.Length; i++)
     Console.Write(inArray[i] + " ");
 }

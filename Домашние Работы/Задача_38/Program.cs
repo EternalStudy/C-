@@ -13,7 +13,8 @@ double[] GetArray(int size, double minValue, double maxValue)
 }
 double ResultMax(double[] inArray)
 {
-    double max = 0;
+    double max = inArray[0];
+     double min = inArray[0];
     for (int i = 0; i < inArray.Length; i++)
     {
         if (inArray[i] > max)
@@ -24,7 +25,7 @@ double ResultMax(double[] inArray)
 }
 double ResultMin(double[] inArray)
 {
-    double min = 0;
+    double min = inArray[0];
     for (int i = 0; i < inArray.Length; i++)
     {
         if (inArray[i] < min)
@@ -33,7 +34,7 @@ double ResultMin(double[] inArray)
     }
     return min;
 }
-double[] array = GetArray(10, -10, 10);
+double[] array = GetArray(10, 0, 10);
 Console.WriteLine(String.Join(", ", array));
 double min = ResultMin(array);
 double max = ResultMax(array);
