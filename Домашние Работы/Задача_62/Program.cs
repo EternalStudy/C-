@@ -37,7 +37,7 @@ void PrintArray(int[,] array)
         Console.WriteLine();
     }
 }
-Console.WriteLine("ведиче число");
+Console.WriteLine("Введите число");
 int lenght = int.Parse(Console.ReadLine()!);
 int[,] array = new int[lenght, lenght];
 ArraySpiral(array, lenght);
