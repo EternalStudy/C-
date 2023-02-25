@@ -39,6 +39,6 @@ void PrintArray(int[,,] inArray)
 }
 
 int[,,] array = new int[2, 2, 2];
-Console.WriteLine("Введиче число");
+Console.WriteLine("Введите число");
 GetArray(array);
 PrintArray(array);
